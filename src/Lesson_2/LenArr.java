@@ -3,7 +3,7 @@ package Lesson_2;
 import java.util.Arrays;
 
 public class LenArr {
-    public static void main(String[] args) {
+    public static void printLen() {
         int len = 7;
         int initialValue = 5;
         int[] arr = new int[len];
@@ -11,5 +11,9 @@ public class LenArr {
             arr[i] = initialValue;
         }
         System.out.println(Arrays.toString(arr));
+    }
+
+    public static void main(String[] args) {
+        printLen();
     }
 }

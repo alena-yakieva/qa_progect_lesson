@@ -1,8 +1,8 @@
 package Lesson_2;
 
 public class LeapYear {
-    public static void main(String[] args) {
-        int year = 2024;
+    public static void printLeapYear() {
+        int year = 2026;
         if (year % 400 == 0) {
             System.out.println("true");
         } else if (year % 100 == 0) {
@@ -12,5 +12,9 @@ public class LeapYear {
         } else {
             System.out.println("false");
         }
+    }
+
+    public static void main(String[] args) {
+        printLeapYear();
     }
 }

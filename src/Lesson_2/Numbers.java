@@ -1,7 +1,7 @@
 package Lesson_2;
 
 public class Numbers {
-    public static void main(String[] args) {
+    public static void sumNumbers() {
         int a = 5;
         int b = 1;
         int c = (a + b);
@@ -11,5 +11,9 @@ public class Numbers {
                 System.out.println("false");
             }
         }
+
+    public static void main(String[] args) {
+        sumNumbers();
     }
+}
 
