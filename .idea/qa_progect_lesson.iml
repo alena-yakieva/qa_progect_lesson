@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/Lesson_3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/out" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/out/production" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/out/production/qa_project_lesson" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/Lesson_4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/Lesson_5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/Lesson_6.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/Lesson_6.2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/Lesson_7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/qa_project_lesson/src/test/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
