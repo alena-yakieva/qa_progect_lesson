@@ -51,4 +51,7 @@ public class FactorialCalculatorTest {
         assertEquals(1L, FactorialCalculator.calculateFactorial(1)); 
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76e748fccc22572bac963095970d65acb8b946a6

@@ -18,7 +18,12 @@ public class FactorialCalculator {
         }
         scanner.close();
     }
+<<<<<<< HEAD
      public static long calculateFactorial(int n) {
+=======
+
+    public static long calculateFactorial(int n) {
+>>>>>>> 76e748fccc22572bac963095970d65acb8b946a6
         if (n < 0) {
             throw new IllegalArgumentException("Факториал отрицательного числа не существует.");
         }
@@ -30,4 +35,7 @@ public class FactorialCalculator {
         return factorial;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76e748fccc22572bac963095970d65acb8b946a6

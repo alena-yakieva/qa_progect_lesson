@@ -80,4 +80,7 @@ public class TriangleAreaTest {
         assertEquals(7.286, area, 0.001);
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76e748fccc22572bac963095970d65acb8b946a6

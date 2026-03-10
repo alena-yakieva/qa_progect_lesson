@@ -78,4 +78,7 @@ public class NumberComparisonTest {
                    NumberComparison.compareNumbers(Integer.MIN_VALUE, Integer.MIN_VALUE + 1));
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76e748fccc22572bac963095970d65acb8b946a6

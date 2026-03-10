@@ -43,4 +43,7 @@ public class ArithmeticOperations {
         return (double) a / b;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 76e748fccc22572bac963095970d65acb8b946a6

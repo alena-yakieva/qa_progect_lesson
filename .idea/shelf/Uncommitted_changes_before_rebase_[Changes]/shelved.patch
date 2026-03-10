@@ -1,0 +1,68 @@
+Index: qa_project_lesson/target/surefire-reports/TestSuite.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>-------------------------------------------------------------------------------\r\nTest set: TestSuite\r\n-------------------------------------------------------------------------------\r\nTests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.561 s -- in TestSuite\r\n
+===================================================================
+diff --git a/qa_project_lesson/target/surefire-reports/TestSuite.txt b/qa_project_lesson/target/surefire-reports/TestSuite.txt
+--- a/qa_project_lesson/target/surefire-reports/TestSuite.txt	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ b/qa_project_lesson/target/surefire-reports/TestSuite.txt	(date 1773145638787)
+@@ -1,4 +1,4 @@
+ -------------------------------------------------------------------------------
+ Test set: TestSuite
+ -------------------------------------------------------------------------------
+-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.561 s -- in TestSuite
++Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.507 s -- in TestSuite
+Index: qa_project_lesson/target/surefire-reports/old/Surefire suite/classes.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><table border='1'>\r\n<tr>\r\n<th>Class name</th>\r\n<th>Method name</th>\r\n<th>Groups</th>\r\n</tr><tr>\r\n<td>com.example.PostFormDataTests</td>\r\n<td>&nbsp;</td><td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@Test</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>testPostFormData</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeClass</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>setUp</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterClass</td>\r\n</tr>\r\n<tr>\r\n<td>com.example.DeleteTest</td>\r\n<td>&nbsp;</td><td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@Test</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>testDeleteRequest</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeClass</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>setUp</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterClass</td>\r\n</tr>\r\n<tr>\r\n<td>com.example.PutTests</td>\r\n<td>&nbsp;</td><td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@Test</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>testPutJsonData</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeClass</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>setUp</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterClass</td>\r\n</tr>\r\n<tr>\r\n<td>com.example.GetTests</td>\r\n<td>&nbsp;</td><td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@Test</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>testGetRequest</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeClass</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>setUp</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterClass</td>\r\n</tr>\r\n<tr>\r\n<td>com.example.PatchTests</td>\r\n<td>&nbsp;</td><td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@Test</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>testPatchJsonData</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeClass</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>setUp</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterClass</td>\r\n</tr>\r\n<tr>\r\n<td>com.example.PostJsonDataTest</td>\r\n<td>&nbsp;</td><td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@Test</td>\r\n</tr>\r\n<tr>\r\n<td>&nbsp;</td>\r\n<td>testPostJsonData</td>\r\n<td>&nbsp;</td></tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeClass</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@BeforeMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterMethod</td>\r\n</tr>\r\n<tr>\r\n<td align='center' colspan='3'>@AfterClass</td>\r\n</tr>\r\n</table>\r\n
+===================================================================
+diff --git a/qa_project_lesson/target/surefire-reports/old/Surefire suite/classes.html b/qa_project_lesson/target/surefire-reports/old/Surefire suite/classes.html
+--- a/qa_project_lesson/target/surefire-reports/old/Surefire suite/classes.html	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ b/qa_project_lesson/target/surefire-reports/old/Surefire suite/classes.html	(date 1773145638704)
+@@ -147,6 +147,10 @@
+ <td align='center' colspan='3'>@BeforeClass</td>
+ </tr>
+ <tr>
++<td>&nbsp;</td>
++<td>setUp</td>
++<td>&nbsp;</td></tr>
++<tr>
+ <td align='center' colspan='3'>@BeforeMethod</td>
+ </tr>
+ <tr>
+Index: qa_project_lesson/src/test/java/com/example/PostJsonDataTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example;\r\nimport org.testng.annotations.Test;\r\nimport static io.restassured.RestAssured.*;\r\nimport static org.hamcrest.Matchers.*;\r\n\r\npublic class PostJsonDataTest {\r\n\r\n     @Test\r\n    public void testPostJsonData() {\r\n\r\n        given()\r\n            .contentType(\"application/json\")\r\n            .body(\"{\\\"data\\\": \\\"This is expected to be sent back as part of response body\\\"}\")\r\n        .when()\r\n            .post(\"/post\")\r\n        .then()\r\n            .statusCode(200)\r\n            .body(\"json.data\", equalTo(\"This is expected to be sent back as part of response body\"));\r\n    }\r\n    \r\n}\r\n
+===================================================================
+diff --git a/qa_project_lesson/src/test/java/com/example/PostJsonDataTest.java b/qa_project_lesson/src/test/java/com/example/PostJsonDataTest.java
+--- a/qa_project_lesson/src/test/java/com/example/PostJsonDataTest.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ b/qa_project_lesson/src/test/java/com/example/PostJsonDataTest.java	(date 1773145485536)
+@@ -1,21 +1,21 @@
+ package com.example;
++
+ import org.testng.annotations.Test;
+ import static io.restassured.RestAssured.*;
+ import static org.hamcrest.Matchers.*;
+ 
+-public class PostJsonDataTest {
++public class PostJsonDataTest extends BaseTest{
+ 
+-     @Test
++    @Test
+     public void testPostJsonData() {
+-
+         given()
+             .contentType("application/json")
+-            .body("{\"data\": \"This is expected to be sent back as part of response body\"}")
++            .body("{\"data\": \"This is expected to be sent back as part of response body\"}") 
+         .when()
+             .post("/post")
+         .then()
+             .statusCode(200)
+             .body("json.data", equalTo("This is expected to be sent back as part of response body"));
+     }
+-    
+ }
++
