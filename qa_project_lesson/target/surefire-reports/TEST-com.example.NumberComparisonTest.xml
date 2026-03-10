@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.NumberComparisonTest" time="0.02" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\test-classes;C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\classes;C:\Users\Кирилл\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Кирилл\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Кирилл\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Кирилл\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Кирилл\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Кирилл\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Кирилл\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Кирилл\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Кирилл\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Yekaterinburg"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.30\bin"/>
+    <property name="sun.java.command" value="C:\Users\Кирилл\AppData\Local\Temp\surefire15004175242225255500\surefirebooter-20260310211121193_3.jar C:\Users\Кирилл\AppData\Local\Temp\surefire15004175242225255500 2026-03-10T21-11-21_023-jvmRun1 surefire-20260310211121193_1tmp surefire_0-20260310211121193_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\test-classes;C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\classes;C:\Users\Кирилл\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Кирилл\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Кирилл\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Кирилл\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Кирилл\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Кирилл\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Кирилл\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Кирилл\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Кирилл\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Кирилл"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.30"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Кирилл\AppData\Local\Temp\surefire15004175242225255500\surefirebooter-20260310211121193_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.30+7-LTS-282"/>
+    <property name="user.name" value="Kirill"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Кирилл\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Кирилл\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.30"/>
+    <property name="user.dir" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.30\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7-preview;c:\Users\Кирилл\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Кирилл\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\Кирилл\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\Program Files\apache-maven-3.9.12-bin\apache-maven-3.9.12\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Кирилл\AppData\Local\Microsoft\WindowsApps;C:\Users\Кирилл\IntelliJ IDEA Community Edition 2022.1.4\bin;C:\Users\Кирилл\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Кирилл\AppData\Local\Programs\Fiddler;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.1.1\bin;C:\Program Files\nodejs;C:\Users\Кирилл\AppData\Roaming\npm;C:\Users\Кирилл\AppData\Local\Microsoft\WindowsApps;C:\Users\Кирилл\AppData\Local\JetBrains\Toolbox\scripts;C:\Program Files\Java\jdk-11.0.30\bin;c:\Users\Кирилл\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.30+7-LTS-282"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testCompareNumbers_ZeroAndPositive" classname="com.example.NumberComparisonTest" time="0.006"/>
+  <testcase name="testCompareNumbers_NegativeNumbers_FirstGreater" classname="com.example.NumberComparisonTest" time="0.0"/>
+  <testcase name="testCompareNumbers_MinMaxValues" classname="com.example.NumberComparisonTest" time="0.0"/>
+  <testcase name="testCompareNumbers_ZeroAndNegative" classname="com.example.NumberComparisonTest" time="0.0"/>
+  <testcase name="testCompareNumbers_ZeroEqualsZero" classname="com.example.NumberComparisonTest" time="0.001"/>
+  <testcase name="testCompareNumbers_MixedSigns_PositiveGreater" classname="com.example.NumberComparisonTest" time="0.001"/>
+  <testcase name="testCompareNumbers_MixedSigns_NegativeGreater" classname="com.example.NumberComparisonTest" time="0.001"/>
+  <testcase name="testCompareNumbers_LargeNumbers" classname="com.example.NumberComparisonTest" time="0.001"/>
+  <testcase name="testCompareNumbers_FirstGreater" classname="com.example.NumberComparisonTest" time="0.001"/>
+  <testcase name="testCompareNumbers_NegativeNumbers_FirstLess" classname="com.example.NumberComparisonTest" time="0.0"/>
+  <testcase name="testCompareNumbers_FirstLess" classname="com.example.NumberComparisonTest" time="0.0"/>
+  <testcase name="testCompareNumbers_EqualNumbers" classname="com.example.NumberComparisonTest" time="0.0"/>
+</testsuite>

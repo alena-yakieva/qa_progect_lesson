@@ -1,0 +1,556 @@
+Index: qa_project_lesson/src/main/java/com/example/TriangleArea.java
+===================================================================
+diff --git a/qa_project_lesson/src/main/java/com/example/TriangleArea.java b/qa_project_lesson/src/main/java/com/example/TriangleArea.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/main/java/com/example/TriangleArea.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,34 +0,0 @@
+-package com.example;
+-import java.util.Scanner;
+-
+-public class TriangleArea {
+-    public static void main(String[] args) {
+-        Scanner scanner = new Scanner(System.in);
+-
+-        System.out.print("Введите длину первой стороны треугольника: ");
+-        double a = scanner.nextDouble();
+-        System.out.print("Введите длину второй стороны треугольника: ");
+-        double b = scanner.nextDouble();
+-        System.out.print("Введите длину третьей стороны треугольника: ");
+-        double c = scanner.nextDouble();
+-
+-         if (!isValidTriangle(a, b, c)) {
+-            System.out.println("Треугольник с такими сторонами не существует.");
+-        } else {
+-            double area = calculateArea(a, b, c);
+-            System.out.printf("Площадь треугольника = %.2f%n", area);
+-        }
+-        scanner.close();
+-    }
+-
+-    public static boolean isValidTriangle(double a, double b, double c) {
+-        return a + b > c && a + c > b && b + c > a &&
+-               a > 0 && b > 0 && c > 0;
+-    }
+-
+-    public static double calculateArea(double a, double b, double c) {
+-        double p = (a + b + c) / 2;
+-        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+-    }
+-}
+-
+Index: qa_project_lesson/src/main/java/com/example/NumberComparison.java
+===================================================================
+diff --git a/qa_project_lesson/src/main/java/com/example/NumberComparison.java b/qa_project_lesson/src/main/java/com/example/NumberComparison.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/main/java/com/example/NumberComparison.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,36 +0,0 @@
+-package com.example;
+-import java.util.Scanner;
+-
+-public class NumberComparison {
+-    public static void main(String[] args) {
+-        Scanner scanner = new Scanner(System.in);
+-
+-        System.out.print("Введите первое целое число: ");
+-        int num1 = scanner.nextInt();
+-        System.out.print("Введите второе целое число: ");
+-        int num2 = scanner.nextInt();
+-
+-        System.out.println("Результат сравнения:");
+-
+-        if (num1 > num2) {
+-            System.out.println(num1 + " больше " + num2);
+-        } else if (num1 < num2) {
+-            System.out.println(num1 + " меньше " + num2);
+-        } else {
+-            System.out.println(num1 + " равно " + num2);
+-        }
+-
+-        scanner.close();
+-    }
+-    
+-    public static String compareNumbers(int num1, int num2) {
+-        if (num1 > num2) {
+-            return num1 + " больше " + num2;
+-        } else if (num1 < num2) {
+-            return num1 + " меньше " + num2;
+-        } else {
+-            return num1 + " равно " + num2;
+-        }
+-    }
+-}
+-
+Index: qa_project_lesson/src/main/java/com/example/FactorialCalculator.java
+===================================================================
+diff --git a/qa_project_lesson/src/main/java/com/example/FactorialCalculator.java b/qa_project_lesson/src/main/java/com/example/FactorialCalculator.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/main/java/com/example/FactorialCalculator.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,33 +0,0 @@
+-package com.example;
+-import java.util.Scanner;
+-
+-public class FactorialCalculator {
+-    public static void main(String[] args) {
+-        Scanner scanner = new Scanner(System.in);
+-        System.out.print("Введите число для вычисления факториала: ");
+-        int n = scanner.nextInt();
+-
+-        if (n < 0) {
+-            System.out.println("Факториал отрицательного числа не существует.");
+-        } else {
+-            long factorial = 1;
+-            for (int i = 1; i <= n; i++) {
+-                factorial *= i;
+-            }
+-            System.out.println("Факториал числа " + n + " = " + factorial);
+-        }
+-        scanner.close();
+-    }
+-
+-    public static long calculateFactorial(int n) {
+-        if (n < 0) {
+-            throw new IllegalArgumentException("Факториал отрицательного числа не существует.");
+-        }
+-
+-        long factorial = 1;
+-        for (int i = 1; i <= n; i++) {
+-            factorial *= i;
+-        }
+-        return factorial;
+-    }
+-}
+Index: qa_project_lesson/src/test/java/com/example/ArithmeticOperationsTest.java
+===================================================================
+diff --git a/qa_project_lesson/src/test/java/com/example/ArithmeticOperationsTest.java b/qa_project_lesson/src/test/java/com/example/ArithmeticOperationsTest.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/test/java/com/example/ArithmeticOperationsTest.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,137 +0,0 @@
+-package com.example;
+-
+-import org.junit.jupiter.api.Test;
+-import static org.junit.jupiter.api.Assertions.*;
+-
+-public class ArithmeticOperationsTest {
+-
+-    @Test
+-     void testAdd_PositiveNumbers() {
+-        assertEquals(5, ArithmeticOperations.add(2, 3));
+-        assertEquals(100, ArithmeticOperations.add(50, 50));
+-    }
+-
+-    @Test
+-    void testAdd_NegativeNumbers() {
+-        assertEquals(-5, ArithmeticOperations.add(-2, -3));
+-        assertEquals(0, ArithmeticOperations.add(-5, 5));
+-    }
+-
+-    @Test
+-    void testAdd_WithZero() {
+-        assertEquals(5, ArithmeticOperations.add(5, 0));
+-        assertEquals(-3, ArithmeticOperations.add(-3, 0));
+-        assertEquals(0, ArithmeticOperations.add(0, 0));
+-    }
+-
+-    @Test
+-    void testSubtract_PositiveResults() {
+-        assertEquals(2, ArithmeticOperations.subtract(5, 3));
+-        assertEquals(42, ArithmeticOperations.subtract(100, 58));
+-    }
+-
+-    @Test
+-    void testSubtract_NegativeResults() {
+-        assertEquals(-2, ArithmeticOperations.subtract(3, 5));
+-        assertEquals(-42, ArithmeticOperations.subtract(58, 100));
+-    }
+-
+-    @Test
+-    void testSubtract_WithZero() {
+-        assertEquals(5, ArithmeticOperations.subtract(5, 0));
+-        assertEquals(-7, ArithmeticOperations.subtract(-7, 0));
+-        assertEquals(0, ArithmeticOperations.subtract(0, 0));
+-    }
+-
+-    @Test
+-    void testMultiply_PositiveNumbers() {
+-        assertEquals(6, ArithmeticOperations.multiply(2, 3));
+-        assertEquals(25, ArithmeticOperations.multiply(5, 5));
+-    }
+-
+-    @Test
+-    void testMultiply_NegativeNumbers() {
+-        assertEquals(6, ArithmeticOperations.multiply(-2, -3));  
+-        assertEquals(-6, ArithmeticOperations.multiply(-2, 3)); 
+-        assertEquals(-6, ArithmeticOperations.multiply(2, -3)); 
+-    }
+-
+-    @Test
+-    void testMultiply_WithZero() {
+-        assertEquals(0, ArithmeticOperations.multiply(0, 100));
+-        assertEquals(0, ArithmeticOperations.multiply(-50, 0));
+-        assertEquals(0, ArithmeticOperations.multiply(0, 0));
+-    }
+-
+-    @Test
+-    void testDivide_PositiveResults() {
+-        assertEquals(2.0, ArithmeticOperations.divide(6, 3), 0.001);
+-        assertEquals(0.5, ArithmeticOperations.divide(1, 2), 0.001);
+-    }
+-
+-    @Test
+-    void testDivide_NegativeResults() {
+-        assertEquals(-2.0, ArithmeticOperations.divide(-6, 3), 0.001);
+-        assertEquals(-0.5, ArithmeticOperations.divide(1, -2), 0.001);
+-        assertEquals(2.0, ArithmeticOperations.divide(-6, -3), 0.001);
+-    }
+-
+-    @Test
+-    void testDivide_FractionalResults() {
+-        assertEquals(3.333, ArithmeticOperations.divide(10, 3), 0.001);
+-        assertEquals(0.333, ArithmeticOperations.divide(1, 3), 0.001);
+-    }
+-
+-    @Test
+-    void testDivide_ByOne() {
+-        assertEquals(5.0, ArithmeticOperations.divide(5, 1), 0.001);
+-        assertEquals(-8.0, ArithmeticOperations.divide(-8, 1), 0.001);
+-    }
+-
+-    @Test
+-    void testDivide_WithZeroNumerator() {
+-        assertEquals(0.0, ArithmeticOperations.divide(0, 5), 0.001);
+-        assertEquals(0.0, ArithmeticOperations.divide(0, -10), 0.001);
+-    }
+-
+-    @Test
+-    void testDivide_ByZero_ThrowsException() {
+-        assertThrows(ArithmeticException.class, () -> {
+-            ArithmeticOperations.divide(5, 0);
+-        });
+-
+-        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> {
+-            ArithmeticOperations.divide(10, 0);
+-        });
+-        assertEquals("Деление на ноль", exception.getMessage());
+-    }
+-
+-    @Test
+-    void testEdgeCases_IntegerBounds() {
+-        assertEquals(Integer.MAX_VALUE, ArithmeticOperations.add(Integer.MAX_VALUE - 1, 1));
+-        assertEquals(Integer.MIN_VALUE, ArithmeticOperations.subtract(Integer.MIN_VALUE + 1, 1));
+-        assertEquals(-Integer.MAX_VALUE, ArithmeticOperations.multiply(Integer.MAX_VALUE, -1));
+-    }
+-
+-    @Test
+-    void testLargeNumbers() {
+-        assertEquals(2_000_000_000, ArithmeticOperations.add(1_000_000_000, 1_000_000_000));
+-        assertEquals(0, ArithmeticOperations.subtract(1_000_000_000, 1_000_000_000));
+-        assertEquals(1_000_000_000L, ArithmeticOperations.multiply(10_000, 100_000));
+-    }
+-
+-    @Test
+-    void testOverflow_Add() {
+-        int result = ArithmeticOperations.add(Integer.MAX_VALUE, 1);
+-        assertEquals(Integer.MIN_VALUE, result); 
+-    }
+-
+-    @Test
+-    void testOverflow_Multiply() {
+-        long expected = (long) Integer.MAX_VALUE * Integer.MAX_VALUE;
+-        int actual = ArithmeticOperations.multiply(Integer.MAX_VALUE, Integer.MAX_VALUE);
+-        assertNotEquals(expected, actual);
+-
+-    }
+-
+-}
+Index: qa_project_lesson/src/test/java/com/example/NumberComparisonTest.java
+===================================================================
+diff --git a/qa_project_lesson/src/test/java/com/example/NumberComparisonTest.java b/qa_project_lesson/src/test/java/com/example/NumberComparisonTest.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/test/java/com/example/NumberComparisonTest.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,80 +0,0 @@
+-package com.example;
+-
+-import org.junit.jupiter.api.Test;
+-import static org.junit.jupiter.api.Assertions.*;
+-
+-public class NumberComparisonTest {
+-
+-     @Test
+-    void testCompareNumbers_FirstGreater() {
+-        String result = NumberComparison.compareNumbers(10, 5);
+-        assertEquals("10 больше 5", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_FirstLess() {
+-        String result = NumberComparison.compareNumbers(3, 7);
+-        assertEquals("3 меньше 7", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_EqualNumbers() {
+-        String result = NumberComparison.compareNumbers(5, 5);
+-        assertEquals("5 равно 5", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_NegativeNumbers_FirstGreater() {
+-        String result = NumberComparison.compareNumbers(-3, -7);
+-        assertEquals("-3 больше -7", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_NegativeNumbers_FirstLess() {
+-        String result = NumberComparison.compareNumbers(-10, -5);
+-        assertEquals("-10 меньше -5", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_MixedSigns_PositiveGreater() {
+-        String result = NumberComparison.compareNumbers(5, -3);
+-        assertEquals("5 больше -3", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_MixedSigns_NegativeGreater() {
+-        String result = NumberComparison.compareNumbers(-5, 3);
+-        assertEquals("-5 меньше 3", result);
+-    }
+-
+-    @Test
+-    void testCompareNumbers_ZeroAndPositive() {
+-        assertEquals("0 меньше 5", NumberComparison.compareNumbers(0, 5));
+-        assertEquals("5 больше 0", NumberComparison.compareNumbers(5, 0));
+-    }
+-
+-    @Test
+-    void testCompareNumbers_ZeroAndNegative() {
+-        assertEquals("0 больше -5", NumberComparison.compareNumbers(0, -5));
+-        assertEquals("-5 меньше 0", NumberComparison.compareNumbers(-5, 0));
+-    }
+-
+-    @Test
+-    void testCompareNumbers_ZeroEqualsZero() {
+-        assertEquals("0 равно 0", NumberComparison.compareNumbers(0, 0));
+-    }
+-
+-    @Test
+-    void testCompareNumbers_LargeNumbers() {
+-        assertEquals("1000000 больше 500000", NumberComparison.compareNumbers(1_000_000, 500_000));
+-        assertEquals("999999 меньше 1000000", NumberComparison.compareNumbers(999_999, 1_000_000));
+-    }
+-
+-    @Test
+-    void testCompareNumbers_MinMaxValues() {
+-        assertEquals(Integer.MAX_VALUE + " больше " + Integer.MIN_VALUE,
+-                   NumberComparison.compareNumbers(Integer.MAX_VALUE, Integer.MIN_VALUE));
+-        assertEquals(Integer.MIN_VALUE + " меньше " + (Integer.MIN_VALUE + 1),
+-                   NumberComparison.compareNumbers(Integer.MIN_VALUE, Integer.MIN_VALUE + 1));
+-    }
+-}
+Index: qa_project_lesson/src/main/java/com/example/ArithmeticOperations.java
+===================================================================
+diff --git a/qa_project_lesson/src/main/java/com/example/ArithmeticOperations.java b/qa_project_lesson/src/main/java/com/example/ArithmeticOperations.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/main/java/com/example/ArithmeticOperations.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,45 +0,0 @@
+-package com.example;
+-import java.util.Scanner;
+-
+-public class ArithmeticOperations {
+-    public static void main(String[] args) {
+-        Scanner scanner = new Scanner(System.in);
+-
+-        System.out.print("Введите первое число: ");
+-        int num1 = scanner.nextInt();
+-        System.out.print("Введите второе число: ");
+-        int num2 = scanner.nextInt();
+-
+-        System.out.println("Результаты арифметических операций:");
+-        System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+-        System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+-        System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+-
+-        if (num2 != 0) {
+-            System.out.println(num1 + " / " + num2 + " = " + (double) num1 / num2);
+-        } else {
+-            System.out.println("Деление на ноль невозможно.");
+-        }
+-
+-        scanner.close();
+-    }
+-
+-    public static int add(int a, int b) {
+-        return a + b;
+-    }
+-
+-    public static int subtract(int a, int b) {
+-        return a - b;
+-    }
+-
+-    public static int multiply(int a, int b) {
+-        return a * b;
+-    }
+-
+-    public static double divide(int a, int b) {
+-        if (b == 0) {
+-            throw new ArithmeticException("Деление на ноль");
+-        }
+-        return (double) a / b;
+-    }
+-}
+Index: qa_project_lesson/src/test/java/com/example/TriangleAreaTest.java
+===================================================================
+diff --git a/qa_project_lesson/src/test/java/com/example/TriangleAreaTest.java b/qa_project_lesson/src/test/java/com/example/TriangleAreaTest.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/test/java/com/example/TriangleAreaTest.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,82 +0,0 @@
+-package com.example;
+-
+-import org.junit.jupiter.api.Test;
+-import static org.junit.jupiter.api.Assertions.*;
+-
+-public class TriangleAreaTest {
+-
+-    @Test
+-     void testIsValidTriangle_ValidScalene() {
+-        assertTrue(TriangleArea.isValidTriangle(3, 4, 5));
+-    }
+-
+-    @Test
+-    void testIsValidTriangle_ValidEquilateral() {
+-        assertTrue(TriangleArea.isValidTriangle(5, 5, 5));
+-    }
+-
+-    @Test
+-    void testIsValidTriangle_ValidIsosceles() {
+-        assertTrue(TriangleArea.isValidTriangle(5, 5, 8));
+-    }
+-
+-    @Test
+-    void testIsValidTriangle_SumEqual() {
+-        assertFalse(TriangleArea.isValidTriangle(1, 2, 3)); 
+-    }
+-
+-    @Test
+-    void testIsValidTriangle_SumLess() {
+-        assertFalse(TriangleArea.isValidTriangle(1, 1, 3)); 
+-    }
+-
+-    @Test
+-    void testIsValidTriangle_NegativeSides() {
+-        assertFalse(TriangleArea.isValidTriangle(-1, 2, 2));
+-        assertFalse(TriangleArea.isValidTriangle(2, -1, 2));
+-        assertFalse(TriangleArea.isValidTriangle(2, 2, -1));
+-    }
+-
+-    @Test
+-    void testIsValidTriangle_ZeroSides() {
+-        assertFalse(TriangleArea.isValidTriangle(0, 2, 2));
+-        assertFalse(TriangleArea.isValidTriangle(2, 0, 2));
+-        assertFalse(TriangleArea.isValidTriangle(2, 2, 0));
+-    }
+-
+-    @Test
+-    void testCalculateArea_RightTriangle() {
+-        double area = TriangleArea.calculateArea(3, 4, 5);
+-        assertEquals(6.0, area, 0.001);
+-    }
+-
+-    @Test
+-    void testCalculateArea_EquilateralTriangle() {
+-        double area = TriangleArea.calculateArea(5, 5, 5);
+-        assertEquals(10.825, area, 0.001);
+-    }
+-
+-    @Test
+-    void testCalculateArea_IsoscelesTriangle() {
+-        double area = TriangleArea.calculateArea(5, 5, 6);
+-        assertEquals(12.0, area, 0.001);
+-    }
+-
+-    @Test
+-    void testCalculateArea_SmallSides() {
+-        double area = TriangleArea.calculateArea(0.5, 0.5, 0.5);
+-        assertEquals(0.108, area, 0.001);
+-    }
+-
+-    @Test
+-    void testCalculateArea_LargeSides() {
+-        double area = TriangleArea.calculateArea(100, 100, 100);
+-        assertEquals(4330.127, area, 0.001);
+-    }
+-
+-    @Test
+-    void testCalculateArea_WithDecimalSides() {
+-        double area = TriangleArea.calculateArea(3.5, 4.2, 5.1);
+-        assertEquals(7.286, area, 0.001);
+-    }
+-}
+Index: qa_project_lesson/src/test/java/com/example/FactorialCalculatorTest.java
+===================================================================
+diff --git a/qa_project_lesson/src/test/java/com/example/FactorialCalculatorTest.java b/qa_project_lesson/src/test/java/com/example/FactorialCalculatorTest.java
+deleted file mode 100644
+--- a/qa_project_lesson/src/test/java/com/example/FactorialCalculatorTest.java	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
++++ /dev/null	(revision bb6ddce6c5e8d118e4163e1ebba7f1c747e35d25)
+@@ -1,53 +0,0 @@
+-package com.example;
+-
+-import org.junit.jupiter.api.Test;
+-import static org.junit.jupiter.api.Assertions.*;
+-
+-public class FactorialCalculatorTest {
+-
+-    @Test
+-    void testCalculateFactorial_Zero() {
+-        assertEquals(1L, FactorialCalculator.calculateFactorial(0));
+-    }
+-
+-    @Test
+-    void testCalculateFactorial_One() {
+-        assertEquals(1L, FactorialCalculator.calculateFactorial(1));
+-    }
+-
+-    @Test
+-    void testCalculateFactorial_SmallNumbers() {
+-        assertEquals(2L, FactorialCalculator.calculateFactorial(2));
+-        assertEquals(6L, FactorialCalculator.calculateFactorial(3));
+-        assertEquals(24L, FactorialCalculator.calculateFactorial(4));
+-        assertEquals(120L, FactorialCalculator.calculateFactorial(5));
+-    }
+-
+-    @Test
+-    void testCalculateFactorial_MediumNumbers() {
+-        assertEquals(3628800L, FactorialCalculator.calculateFactorial(10));
+-        assertEquals(479001600L, FactorialCalculator.calculateFactorial(12));
+-    }
+-
+-    @Test
+-    void testCalculateFactorial_LargeNumber_WithinLongRange() {
+-        assertEquals(2432902008176640000L, FactorialCalculator.calculateFactorial(20));
+-    }
+-
+-    @Test
+-    void testCalculateFactorial_NegativeNumber_ThrowsException() {
+-        IllegalArgumentException exception = assertThrows(
+-            IllegalArgumentException.class,
+-            () -> FactorialCalculator.calculateFactorial(-1)
+-        );
+-        assertEquals("Факториал отрицательного числа не существует.", exception.getMessage());
+-        assertThrows(IllegalArgumentException.class, () -> FactorialCalculator.calculateFactorial(-5));
+-        assertThrows(IllegalArgumentException.class, () -> FactorialCalculator.calculateFactorial(-100));
+-    }
+-
+-    @Test
+-    void testCalculateFactorial_EdgeCases() {
+-        assertEquals(1L, FactorialCalculator.calculateFactorial(0)); 
+-        assertEquals(1L, FactorialCalculator.calculateFactorial(1)); 
+-    }
+-}

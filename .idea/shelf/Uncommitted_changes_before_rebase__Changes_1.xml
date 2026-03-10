@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]1" date="1773147866337" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="qa_project_lesson/target/test-classes/com/example/PostFormDataTests.class" />
+    <option name="AFTER_PATH" value="qa_project_lesson/target/test-classes/com/example/PostFormDataTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/PostFormDataTests.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="qa_project_lesson/target/test-classes/com/example/DeleteTest.class" />
+    <option name="AFTER_PATH" value="qa_project_lesson/target/test-classes/com/example/DeleteTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/DeleteTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="qa_project_lesson/target/test-classes/com/example/BaseTest.class" />
+    <option name="AFTER_PATH" value="qa_project_lesson/target/test-classes/com/example/BaseTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/BaseTest.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="qa_project_lesson/target/test-classes/com/example/GetTests.class" />
+    <option name="AFTER_PATH" value="qa_project_lesson/target/test-classes/com/example/GetTests.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/GetTests.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="qa_project_lesson/target/test-classes/com/example/PostJsonDataTest.class" />
+    <option name="AFTER_PATH" value="qa_project_lesson/target/test-classes/com/example/PostJsonDataTest.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/PostJsonDataTest.class" />
+  </binary>
+</changelist>

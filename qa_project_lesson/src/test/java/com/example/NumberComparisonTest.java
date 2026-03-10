@@ -4,66 +4,78 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class NumberComparisonTest {
-    @Test
-    void testFirstNumberGreater() {
+
+     @Test
+    void testCompareNumbers_FirstGreater() {
         String result = NumberComparison.compareNumbers(10, 5);
         assertEquals("10 больше 5", result);
     }
 
-    void testFirstNumberLess() {
-        String result = NumberComparison.compareNumbers(3, 5);
-        assertEquals("3 меньше 5", result);
-    }
-
-    void testNumberEquals() {
-        String result = NumberComparison.compareNumbers(-3, -5);
-        assertEquals("-3 больше -5", result);
-    }
-
-    void testNegativeNumdersFirstLess() {
-        String result = NumberComparison.compareNumbers(-10, -3);
-        assertEquals("-10 меньше -3", result);
+    @Test
+    void testCompareNumbers_FirstLess() {
+        String result = NumberComparison.compareNumbers(3, 7);
+        assertEquals("3 меньше 7", result);
     }
 
     @Test
-    void testMixedSignsFirstGreater() {
-        String result = NumberComparison.compareNumbers(0, -1);
-        assertEquals("0 больше -1", result);
+    void testCompareNumbers_EqualNumbers() {
+        String result = NumberComparison.compareNumbers(5, 5);
+        assertEquals("5 равно 5", result);
     }
 
     @Test
-    void testMixedSignsFirstLess() {
-        String result = NumberComparison.compareNumbers(-5, 10);
-        assertEquals("-5 меньше 10", result);
+    void testCompareNumbers_NegativeNumbers_FirstGreater() {
+        String result = NumberComparison.compareNumbers(-3, -7);
+        assertEquals("-3 больше -7", result);
     }
 
     @Test
-    void testZeroComparison() {
-        String result1 = NumberComparison.compareNumbers(0, 0);
-        assertEquals("0 равно 0", result1);
-
-        String result2 = NumberComparison.compareNumbers(0, 5);
-        assertEquals("0 меньше 5", result2);
-
-        String result3 = NumberComparison.compareNumbers(-3, 0);
-        assertEquals("-3 меньше 0", result3);
+    void testCompareNumbers_NegativeNumbers_FirstLess() {
+        String result = NumberComparison.compareNumbers(-10, -5);
+        assertEquals("-10 меньше -5", result);
     }
 
     @Test
-    void testLargeNumbers() {
-        String result1 = NumberComparison.compareNumbers(1000000, 999999);
-        assertEquals("1000000 больше 999999", result1);
-
-        String result2 = NumberComparison.compareNumbers(Integer.MAX_VALUE, Integer.MIN_VALUE);
-        assertEquals(Integer.MAX_VALUE + " больше " + Integer.MIN_VALUE, result2);
+    void testCompareNumbers_MixedSigns_PositiveGreater() {
+        String result = NumberComparison.compareNumbers(5, -3);
+        assertEquals("5 больше -3", result);
     }
 
     @Test
-    void testBoundaryValues() {
-        String result1 = NumberComparison.compareNumbers(Integer.MIN_VALUE, Integer.MAX_VALUE);
-        assertEquals(Integer.MIN_VALUE + " меньше " + Integer.MAX_VALUE, result1);
+    void testCompareNumbers_MixedSigns_NegativeGreater() {
+        String result = NumberComparison.compareNumbers(-5, 3);
+        assertEquals("-5 меньше 3", result);
+    }
 
-        String result2 = NumberComparison.compareNumbers(Integer.MAX_VALUE, Integer.MAX_VALUE);
-        assertEquals(Integer.MAX_VALUE + " равно " + Integer.MAX_VALUE, result2);
+    @Test
+    void testCompareNumbers_ZeroAndPositive() {
+        assertEquals("0 меньше 5", NumberComparison.compareNumbers(0, 5));
+        assertEquals("5 больше 0", NumberComparison.compareNumbers(5, 0));
+    }
+
+    @Test
+    void testCompareNumbers_ZeroAndNegative() {
+        assertEquals("0 больше -5", NumberComparison.compareNumbers(0, -5));
+        assertEquals("-5 меньше 0", NumberComparison.compareNumbers(-5, 0));
+    }
+
+    @Test
+    void testCompareNumbers_ZeroEqualsZero() {
+        assertEquals("0 равно 0", NumberComparison.compareNumbers(0, 0));
+    }
+
+    @Test
+    void testCompareNumbers_LargeNumbers() {
+        assertEquals("1000000 больше 500000", NumberComparison.compareNumbers(1_000_000, 500_000));
+        assertEquals("999999 меньше 1000000", NumberComparison.compareNumbers(999_999, 1_000_000));
+    }
+
+    @Test
+    void testCompareNumbers_MinMaxValues() {
+        assertEquals(Integer.MAX_VALUE + " больше " + Integer.MIN_VALUE,
+                   NumberComparison.compareNumbers(Integer.MAX_VALUE, Integer.MIN_VALUE));
+        assertEquals(Integer.MIN_VALUE + " меньше " + (Integer.MIN_VALUE + 1),
+                   NumberComparison.compareNumbers(Integer.MIN_VALUE, Integer.MIN_VALUE + 1));
     }
 }
+
