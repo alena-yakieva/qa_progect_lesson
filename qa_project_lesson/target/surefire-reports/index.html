@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MyTestSuite" class="navigator-link">
+              <span class="suite-name border-passed">MyTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MyTestSuite" class="navigator-link ">
+                    <span>C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MyTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MyTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MyTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MyTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MyTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MyTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">69 methods,   69 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods passed suite-MyTestSuite"> (hide)</a> <!-- hide-methods passed suite-MyTestSuite -->
+                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods passed suite-MyTestSuite"> (show)</a> <!-- show-methods passed suite-MyTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MyTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testAddition(100, -50, 50, Сложение с отрицательным)">testAddition(100, -50, 50, Сложение с отрицательным)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testAddition(-5, 3, -2, Сложение отрицательного и положительного)">testAddition(-5, 3, -2, Сложение отрицательного и положительного)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testAddition(2147483646, 1, 2147483647, Близко к переполнению)">testAddition(2147483646, 1, 2147483647, Близко к переполнению)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testAddition(2, 3, 5, Сложение положительных чисел)">testAddition(2, 3, 5, Сложение положительных чисел)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testAddition(0, 0, 0, Сложение нулей)">testAddition(0, 0, 0, Сложение нулей)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testAllZeroSides">testAllZeroSides</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(5, 120)">testCalculateFactorial(5, 120)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(0, 1)">testCalculateFactorial(0, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(15, 1307674368000)">testCalculateFactorial(15, 1307674368000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(8, 40320)">testCalculateFactorial(8, 40320)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(1, 1)">testCalculateFactorial(1, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(2, 2)">testCalculateFactorial(2, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(3, 6)">testCalculateFactorial(3, 6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(10, 3628800)">testCalculateFactorial(10, 3628800)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(7, 5040)">testCalculateFactorial(7, 5040)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(4, 24)">testCalculateFactorial(4, 24)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(6, 720)">testCalculateFactorial(6, 720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testCalculateFactorial(9, 362880)">testCalculateFactorial(9, 362880)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testComplexExpressions(2 + 3 * 4, 14, 14)">testComplexExpressions(2 + 3 * 4, 14, 14)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testComplexExpressions(10 / 2 + 3, 8, 8)">testComplexExpressions(10 / 2 + 3, 8, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testComplexExpressions((2 + 3) * 4, 20, 20)">testComplexExpressions((2 + 3) * 4, 20, 20)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testComplexExpressions(5 + 2 * 3 - 1, 10, 10)">testComplexExpressions(5 + 2 * 3 - 1, 10, 10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testDegenerateTriangle">testDegenerateTriangle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testDivision(42, 1, 42, Деление на 1)">testDivision(42, 1, 42, Деление на 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testDivision(20, 4, 5, Обычное деление)">testDivision(20, 4, 5, Обычное деление)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testDivision(-10, 2, -5, Отрицательное делимое)">testDivision(-10, 2, -5, Отрицательное делимое)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testDivision(7, 2, 3, Целочисленное деление)">testDivision(7, 2, 3, Целочисленное деление)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testDivision(15, -3, -5, Отрицательный делитель)">testDivision(15, -3, -5, Отрицательный делитель)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testDivisionByZero">testDivisionByZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testEqualNumbers">testEqualNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testFactorialOfOne">testFactorialOfOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testFactorialOfZero">testFactorialOfZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testFactorialOverflow">testFactorialOverflow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testFloatingPointPrecision">testFloatingPointPrecision</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testInvalidTriangleSumOfTwoSidesEqualsThird">testInvalidTriangleSumOfTwoSidesEqualsThird</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testInvalidTriangleSumOfTwoSidesLessThanThird">testInvalidTriangleSumOfTwoSidesLessThanThird</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testLargeNumberWithinLongRange">testLargeNumberWithinLongRange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testLargeNumbers">testLargeNumbers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testLargeSides">testLargeSides</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testMinMaxValues">testMinMaxValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testMixedSignsFirstNegative">testMixedSignsFirstNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testMixedSignsFirstPositive">testMixedSignsFirstPositive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testModulo(-7, 3, -1, Отрицательное делимое (результат: -1))">testModulo(-7, 3, -1, Отрицательное делимое (результат: -1))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testModulo(10, 3, 1, Обычный остаток)">testModulo(10, 3, 1, Обычный остаток)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testModulo(7, -3, 1, Отрицательный делитель (результат: 1))">testModulo(7, -3, 1, Отрицательный делитель (результат: 1))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testModulo(7, 10, 7, Делимое меньше делителя)">testModulo(7, 10, 7, Делимое меньше делителя)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testModulo(8, 4, 0, Остаток 0)">testModulo(8, 4, 0, Остаток 0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testMultiplication(-3, 4, -12, Отрицательное * положительное)">testMultiplication(-3, 4, -12, Отрицательное * положительное)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testMultiplication(-2, -5, 10, Отрицательное * отрицательное)">testMultiplication(-2, -5, 10, Отрицательное * отрицательное)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testMultiplication(1, 42, 42, Умножение на 1)">testMultiplication(1, 42, 42, Умножение на 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testMultiplication(0, 100, 0, Умножение на ноль)">testMultiplication(0, 100, 0, Умножение на ноль)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testMultiplication(4, 5, 20, Умножение положительных)">testMultiplication(4, 5, 20, Умножение положительных)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestFactorialCalculator" class="method navigator-link" hash-for-method="testNegativeNumberThrowsException">testNegativeNumberThrowsException</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testNegativeNumbersFirstGreater">testNegativeNumbersFirstGreater</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testNegativeNumbersFirstLess">testNegativeNumbersFirstLess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testNegativeSide">testNegativeSide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testNumberGreater">testNumberGreater</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testNumberLess">testNumberLess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testSubtraction(5, 5, 0, Вычитание одинаковых чисел)">testSubtraction(5, 5, 0, Вычитание одинаковых чисел)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testSubtraction(-2147483643, 5, -2147483648, Близко к минимальному)">testSubtraction(-2147483643, 5, -2147483648, Близко к минимальному)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testSubtraction(0, 5, -5, Вычитание из нуля)">testSubtraction(0, 5, -5, Вычитание из нуля)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testSubtraction(-3, 2, -5, Вычитание с отрицательными)">testSubtraction(-3, 2, -5, Вычитание с отрицательными)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestArithmeticOperations" class="method navigator-link" hash-for-method="testSubtraction(10, 3, 7, Обычное вычитание)">testSubtraction(10, 3, 7, Обычное вычитание)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testValidTriangleEquilateral">testValidTriangleEquilateral</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testValidTriangleIsosceles">testValidTriangleIsosceles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testValidTriangleRightAngled">testValidTriangleRightAngled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testVerySmallSides">testVerySmallSides</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestNumberComparison" class="method navigator-link" hash-for-method="testZeroComparison">testZeroComparison</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="com.example.TestTriangleArea" class="method navigator-link" hash-for-method="testZeroSide">testZeroSide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyTestSuite" class="panel MyTestSuite">
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TestArithmeticOperations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddition(100, -50, 50, Сложение с отрицательным)">
+                  </a> <!-- testAddition(100, -50, 50, Сложение с отрицательным) -->
+                  <span class="method-name">testAddition</span>
+                  <span class="parameters">(100,-50,50,Сложение с отрицательным)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddition(-5, 3, -2, Сложение отрицательного и положительного)">
+                  </a> <!-- testAddition(-5, 3, -2, Сложение отрицательного и положительного) -->
+                  <span class="method-name">testAddition</span>
+                  <span class="parameters">(-5,3,-2,Сложение отрицательного и положительного)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddition(2147483646, 1, 2147483647, Близко к переполнению)">
+                  </a> <!-- testAddition(2147483646, 1, 2147483647, Близко к переполнению) -->
+                  <span class="method-name">testAddition</span>
+                  <span class="parameters">(2147483646,1,2147483647,Близко к переполнению)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddition(2, 3, 5, Сложение положительных чисел)">
+                  </a> <!-- testAddition(2, 3, 5, Сложение положительных чисел) -->
+                  <span class="method-name">testAddition</span>
+                  <span class="parameters">(2,3,5,Сложение положительных чисел)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddition(0, 0, 0, Сложение нулей)">
+                  </a> <!-- testAddition(0, 0, 0, Сложение нулей) -->
+                  <span class="method-name">testAddition</span>
+                  <span class="parameters">(0,0,0,Сложение нулей)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testComplexExpressions(2 + 3 * 4, 14, 14)">
+                  </a> <!-- testComplexExpressions(2 + 3 * 4, 14, 14) -->
+                  <span class="method-name">testComplexExpressions</span>
+                  <span class="parameters">(2 + 3 * 4,14,14)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testComplexExpressions(10 / 2 + 3, 8, 8)">
+                  </a> <!-- testComplexExpressions(10 / 2 + 3, 8, 8) -->
+                  <span class="method-name">testComplexExpressions</span>
+                  <span class="parameters">(10 / 2 + 3,8,8)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testComplexExpressions((2 + 3) * 4, 20, 20)">
+                  </a> <!-- testComplexExpressions((2 + 3) * 4, 20, 20) -->
+                  <span class="method-name">testComplexExpressions</span>
+                  <span class="parameters">((2 + 3) * 4,20,20)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testComplexExpressions(5 + 2 * 3 - 1, 10, 10)">
+                  </a> <!-- testComplexExpressions(5 + 2 * 3 - 1, 10, 10) -->
+                  <span class="method-name">testComplexExpressions</span>
+                  <span class="parameters">(5 + 2 * 3 - 1,10,10)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivision(42, 1, 42, Деление на 1)">
+                  </a> <!-- testDivision(42, 1, 42, Деление на 1) -->
+                  <span class="method-name">testDivision</span>
+                  <span class="parameters">(42,1,42,Деление на 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivision(20, 4, 5, Обычное деление)">
+                  </a> <!-- testDivision(20, 4, 5, Обычное деление) -->
+                  <span class="method-name">testDivision</span>
+                  <span class="parameters">(20,4,5,Обычное деление)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivision(-10, 2, -5, Отрицательное делимое)">
+                  </a> <!-- testDivision(-10, 2, -5, Отрицательное делимое) -->
+                  <span class="method-name">testDivision</span>
+                  <span class="parameters">(-10,2,-5,Отрицательное делимое)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivision(7, 2, 3, Целочисленное деление)">
+                  </a> <!-- testDivision(7, 2, 3, Целочисленное деление) -->
+                  <span class="method-name">testDivision</span>
+                  <span class="parameters">(7,2,3,Целочисленное деление)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivision(15, -3, -5, Отрицательный делитель)">
+                  </a> <!-- testDivision(15, -3, -5, Отрицательный делитель) -->
+                  <span class="method-name">testDivision</span>
+                  <span class="parameters">(15,-3,-5,Отрицательный делитель)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDivisionByZero">
+                  </a> <!-- testDivisionByZero -->
+                  <span class="method-name">testDivisionByZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModulo(-7, 3, -1, Отрицательное делимое (результат: -1))">
+                  </a> <!-- testModulo(-7, 3, -1, Отрицательное делимое (результат: -1)) -->
+                  <span class="method-name">testModulo</span>
+                  <span class="parameters">(-7,3,-1,Отрицательное делимое (результат: -1))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModulo(10, 3, 1, Обычный остаток)">
+                  </a> <!-- testModulo(10, 3, 1, Обычный остаток) -->
+                  <span class="method-name">testModulo</span>
+                  <span class="parameters">(10,3,1,Обычный остаток)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModulo(7, -3, 1, Отрицательный делитель (результат: 1))">
+                  </a> <!-- testModulo(7, -3, 1, Отрицательный делитель (результат: 1)) -->
+                  <span class="method-name">testModulo</span>
+                  <span class="parameters">(7,-3,1,Отрицательный делитель (результат: 1))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModulo(7, 10, 7, Делимое меньше делителя)">
+                  </a> <!-- testModulo(7, 10, 7, Делимое меньше делителя) -->
+                  <span class="method-name">testModulo</span>
+                  <span class="parameters">(7,10,7,Делимое меньше делителя)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testModulo(8, 4, 0, Остаток 0)">
+                  </a> <!-- testModulo(8, 4, 0, Остаток 0) -->
+                  <span class="method-name">testModulo</span>
+                  <span class="parameters">(8,4,0,Остаток 0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultiplication(-3, 4, -12, Отрицательное * положительное)">
+                  </a> <!-- testMultiplication(-3, 4, -12, Отрицательное * положительное) -->
+                  <span class="method-name">testMultiplication</span>
+                  <span class="parameters">(-3,4,-12,Отрицательное * положительное)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultiplication(-2, -5, 10, Отрицательное * отрицательное)">
+                  </a> <!-- testMultiplication(-2, -5, 10, Отрицательное * отрицательное) -->
+                  <span class="method-name">testMultiplication</span>
+                  <span class="parameters">(-2,-5,10,Отрицательное * отрицательное)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultiplication(1, 42, 42, Умножение на 1)">
+                  </a> <!-- testMultiplication(1, 42, 42, Умножение на 1) -->
+                  <span class="method-name">testMultiplication</span>
+                  <span class="parameters">(1,42,42,Умножение на 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultiplication(0, 100, 0, Умножение на ноль)">
+                  </a> <!-- testMultiplication(0, 100, 0, Умножение на ноль) -->
+                  <span class="method-name">testMultiplication</span>
+                  <span class="parameters">(0,100,0,Умножение на ноль)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMultiplication(4, 5, 20, Умножение положительных)">
+                  </a> <!-- testMultiplication(4, 5, 20, Умножение положительных) -->
+                  <span class="method-name">testMultiplication</span>
+                  <span class="parameters">(4,5,20,Умножение положительных)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubtraction(5, 5, 0, Вычитание одинаковых чисел)">
+                  </a> <!-- testSubtraction(5, 5, 0, Вычитание одинаковых чисел) -->
+                  <span class="method-name">testSubtraction</span>
+                  <span class="parameters">(5,5,0,Вычитание одинаковых чисел)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubtraction(-2147483643, 5, -2147483648, Близко к минимальному)">
+                  </a> <!-- testSubtraction(-2147483643, 5, -2147483648, Близко к минимальному) -->
+                  <span class="method-name">testSubtraction</span>
+                  <span class="parameters">(-2147483643,5,-2147483648,Близко к минимальному)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubtraction(0, 5, -5, Вычитание из нуля)">
+                  </a> <!-- testSubtraction(0, 5, -5, Вычитание из нуля) -->
+                  <span class="method-name">testSubtraction</span>
+                  <span class="parameters">(0,5,-5,Вычитание из нуля)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubtraction(-3, 2, -5, Вычитание с отрицательными)">
+                  </a> <!-- testSubtraction(-3, 2, -5, Вычитание с отрицательными) -->
+                  <span class="method-name">testSubtraction</span>
+                  <span class="parameters">(-3,2,-5,Вычитание с отрицательными)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSubtraction(10, 3, 7, Обычное вычитание)">
+                  </a> <!-- testSubtraction(10, 3, 7, Обычное вычитание) -->
+                  <span class="method-name">testSubtraction</span>
+                  <span class="parameters">(10,3,7,Обычное вычитание)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TestNumberComparison</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEqualNumbers">
+                  </a> <!-- testEqualNumbers -->
+                  <span class="method-name">testEqualNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLargeNumbers">
+                  </a> <!-- testLargeNumbers -->
+                  <span class="method-name">testLargeNumbers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMinMaxValues">
+                  </a> <!-- testMinMaxValues -->
+                  <span class="method-name">testMinMaxValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMixedSignsFirstNegative">
+                  </a> <!-- testMixedSignsFirstNegative -->
+                  <span class="method-name">testMixedSignsFirstNegative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMixedSignsFirstPositive">
+                  </a> <!-- testMixedSignsFirstPositive -->
+                  <span class="method-name">testMixedSignsFirstPositive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeNumbersFirstGreater">
+                  </a> <!-- testNegativeNumbersFirstGreater -->
+                  <span class="method-name">testNegativeNumbersFirstGreater</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeNumbersFirstLess">
+                  </a> <!-- testNegativeNumbersFirstLess -->
+                  <span class="method-name">testNegativeNumbersFirstLess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumberGreater">
+                  </a> <!-- testNumberGreater -->
+                  <span class="method-name">testNumberGreater</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNumberLess">
+                  </a> <!-- testNumberLess -->
+                  <span class="method-name">testNumberLess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testZeroComparison">
+                  </a> <!-- testZeroComparison -->
+                  <span class="method-name">testZeroComparison</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TestFactorialCalculator</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(5, 120)">
+                  </a> <!-- testCalculateFactorial(5, 120) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(5,120)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(0, 1)">
+                  </a> <!-- testCalculateFactorial(0, 1) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(0,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(15, 1307674368000)">
+                  </a> <!-- testCalculateFactorial(15, 1307674368000) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(15,1307674368000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(8, 40320)">
+                  </a> <!-- testCalculateFactorial(8, 40320) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(8,40320)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(1, 1)">
+                  </a> <!-- testCalculateFactorial(1, 1) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(1,1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(2, 2)">
+                  </a> <!-- testCalculateFactorial(2, 2) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(2,2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(3, 6)">
+                  </a> <!-- testCalculateFactorial(3, 6) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(3,6)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(10, 3628800)">
+                  </a> <!-- testCalculateFactorial(10, 3628800) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(10,3628800)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(7, 5040)">
+                  </a> <!-- testCalculateFactorial(7, 5040) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(7,5040)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(4, 24)">
+                  </a> <!-- testCalculateFactorial(4, 24) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(4,24)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(6, 720)">
+                  </a> <!-- testCalculateFactorial(6, 720) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(6,720)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCalculateFactorial(9, 362880)">
+                  </a> <!-- testCalculateFactorial(9, 362880) -->
+                  <span class="method-name">testCalculateFactorial</span>
+                  <span class="parameters">(9,362880)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFactorialOfOne">
+                  </a> <!-- testFactorialOfOne -->
+                  <span class="method-name">testFactorialOfOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFactorialOfZero">
+                  </a> <!-- testFactorialOfZero -->
+                  <span class="method-name">testFactorialOfZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFactorialOverflow">
+                  </a> <!-- testFactorialOverflow -->
+                  <span class="method-name">testFactorialOverflow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLargeNumberWithinLongRange">
+                  </a> <!-- testLargeNumberWithinLongRange -->
+                  <span class="method-name">testLargeNumberWithinLongRange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeNumberThrowsException">
+                  </a> <!-- testNegativeNumberThrowsException -->
+                  <span class="method-name">testNegativeNumberThrowsException</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.TestTriangleArea</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAllZeroSides">
+                  </a> <!-- testAllZeroSides -->
+                  <span class="method-name">testAllZeroSides</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDegenerateTriangle">
+                  </a> <!-- testDegenerateTriangle -->
+                  <span class="method-name">testDegenerateTriangle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFloatingPointPrecision">
+                  </a> <!-- testFloatingPointPrecision -->
+                  <span class="method-name">testFloatingPointPrecision</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidTriangleSumOfTwoSidesEqualsThird">
+                  </a> <!-- testInvalidTriangleSumOfTwoSidesEqualsThird -->
+                  <span class="method-name">testInvalidTriangleSumOfTwoSidesEqualsThird</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidTriangleSumOfTwoSidesLessThanThird">
+                  </a> <!-- testInvalidTriangleSumOfTwoSidesLessThanThird -->
+                  <span class="method-name">testInvalidTriangleSumOfTwoSidesLessThanThird</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLargeSides">
+                  </a> <!-- testLargeSides -->
+                  <span class="method-name">testLargeSides</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeSide">
+                  </a> <!-- testNegativeSide -->
+                  <span class="method-name">testNegativeSide</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidTriangleEquilateral">
+                  </a> <!-- testValidTriangleEquilateral -->
+                  <span class="method-name">testValidTriangleEquilateral</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidTriangleIsosceles">
+                  </a> <!-- testValidTriangleIsosceles -->
+                  <span class="method-name">testValidTriangleIsosceles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidTriangleRightAngled">
+                  </a> <!-- testValidTriangleRightAngled -->
+                  <span class="method-name">testValidTriangleRightAngled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testVerySmallSides">
+                  </a> <!-- testVerySmallSides -->
+                  <span class="method-name">testVerySmallSides</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testZeroSide">
+                  </a> <!-- testZeroSide -->
+                  <span class="method-name">testZeroSide</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+        </div> <!-- panel MyTestSuite -->
+        <div panel-name="test-xml-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UnitTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.TestArithmeticOperations&quot;/&gt;
+      &lt;class name=&quot;com.example.TestFactorialCalculator&quot;/&gt;
+      &lt;class name=&quot;com.example.TestNumberComparison&quot;/&gt;
+      &lt;class name=&quot;com.example.TestTriangleArea&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UnitTests --&gt;
+&lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UnitTests (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyTestSuite');
+function tableData_MyTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(69);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testAddition')
+data.setCell(0, 2, 'com.example.TestArithmeticOperations')
+data.setCell(0, 3, 4);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCalculateFactorial')
+data.setCell(1, 2, 'com.example.TestFactorialCalculator')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEqualNumbers')
+data.setCell(2, 2, 'com.example.TestNumberComparison')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMixedSignsFirstPositive')
+data.setCell(3, 2, 'com.example.TestNumberComparison')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testFloatingPointPrecision')
+data.setCell(4, 2, 'com.example.TestTriangleArea')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testMixedSignsFirstNegative')
+data.setCell(5, 2, 'com.example.TestNumberComparison')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testInvalidTriangleSumOfTwoSidesLessThanThird')
+data.setCell(6, 2, 'com.example.TestTriangleArea')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCalculateFactorial')
+data.setCell(7, 2, 'com.example.TestFactorialCalculator')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testSubtraction')
+data.setCell(8, 2, 'com.example.TestArithmeticOperations')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testModulo')
+data.setCell(9, 2, 'com.example.TestArithmeticOperations')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testValidTriangleEquilateral')
+data.setCell(10, 2, 'com.example.TestTriangleArea')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testModulo')
+data.setCell(11, 2, 'com.example.TestArithmeticOperations')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testDivision')
+data.setCell(12, 2, 'com.example.TestArithmeticOperations')
+data.setCell(12, 3, 1);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testFactorialOverflow')
+data.setCell(13, 2, 'com.example.TestFactorialCalculator')
+data.setCell(13, 3, 1);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDegenerateTriangle')
+data.setCell(14, 2, 'com.example.TestTriangleArea')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testAllZeroSides')
+data.setCell(15, 2, 'com.example.TestTriangleArea')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testNegativeSide')
+data.setCell(16, 2, 'com.example.TestTriangleArea')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDivision')
+data.setCell(17, 2, 'com.example.TestArithmeticOperations')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testComplexExpressions')
+data.setCell(18, 2, 'com.example.TestArithmeticOperations')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testInvalidTriangleSumOfTwoSidesEqualsThird')
+data.setCell(19, 2, 'com.example.TestTriangleArea')
+data.setCell(19, 3, 1);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testZeroComparison')
+data.setCell(20, 2, 'com.example.TestNumberComparison')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testLargeSides')
+data.setCell(21, 2, 'com.example.TestTriangleArea')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testCalculateFactorial')
+data.setCell(22, 2, 'com.example.TestFactorialCalculator')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testNumberLess')
+data.setCell(23, 2, 'com.example.TestNumberComparison')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testDivisionByZero')
+data.setCell(24, 2, 'com.example.TestArithmeticOperations')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testLargeNumbers')
+data.setCell(25, 2, 'com.example.TestNumberComparison')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testFactorialOfOne')
+data.setCell(26, 2, 'com.example.TestFactorialCalculator')
+data.setCell(26, 3, 0);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testSubtraction')
+data.setCell(27, 2, 'com.example.TestArithmeticOperations')
+data.setCell(27, 3, 0);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testCalculateFactorial')
+data.setCell(28, 2, 'com.example.TestFactorialCalculator')
+data.setCell(28, 3, 0);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testMultiplication')
+data.setCell(29, 2, 'com.example.TestArithmeticOperations')
+data.setCell(29, 3, 0);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testAddition')
+data.setCell(30, 2, 'com.example.TestArithmeticOperations')
+data.setCell(30, 3, 0);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testCalculateFactorial')
+data.setCell(31, 2, 'com.example.TestFactorialCalculator')
+data.setCell(31, 3, 0);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testNegativeNumbersFirstLess')
+data.setCell(32, 2, 'com.example.TestNumberComparison')
+data.setCell(32, 3, 0);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testSubtraction')
+data.setCell(33, 2, 'com.example.TestArithmeticOperations')
+data.setCell(33, 3, 0);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testCalculateFactorial')
+data.setCell(34, 2, 'com.example.TestFactorialCalculator')
+data.setCell(34, 3, 0);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testCalculateFactorial')
+data.setCell(35, 2, 'com.example.TestFactorialCalculator')
+data.setCell(35, 3, 0);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testCalculateFactorial')
+data.setCell(36, 2, 'com.example.TestFactorialCalculator')
+data.setCell(36, 3, 0);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testCalculateFactorial')
+data.setCell(37, 2, 'com.example.TestFactorialCalculator')
+data.setCell(37, 3, 0);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testCalculateFactorial')
+data.setCell(38, 2, 'com.example.TestFactorialCalculator')
+data.setCell(38, 3, 0);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testAddition')
+data.setCell(39, 2, 'com.example.TestArithmeticOperations')
+data.setCell(39, 3, 0);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testMultiplication')
+data.setCell(40, 2, 'com.example.TestArithmeticOperations')
+data.setCell(40, 3, 0);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testValidTriangleRightAngled')
+data.setCell(41, 2, 'com.example.TestTriangleArea')
+data.setCell(41, 3, 0);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testAddition')
+data.setCell(42, 2, 'com.example.TestArithmeticOperations')
+data.setCell(42, 3, 0);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testSubtraction')
+data.setCell(43, 2, 'com.example.TestArithmeticOperations')
+data.setCell(43, 3, 0);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testMultiplication')
+data.setCell(44, 2, 'com.example.TestArithmeticOperations')
+data.setCell(44, 3, 0);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testModulo')
+data.setCell(45, 2, 'com.example.TestArithmeticOperations')
+data.setCell(45, 3, 0);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testComplexExpressions')
+data.setCell(46, 2, 'com.example.TestArithmeticOperations')
+data.setCell(46, 3, 0);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testNegativeNumbersFirstGreater')
+data.setCell(47, 2, 'com.example.TestNumberComparison')
+data.setCell(47, 3, 0);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testComplexExpressions')
+data.setCell(48, 2, 'com.example.TestArithmeticOperations')
+data.setCell(48, 3, 0);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testZeroSide')
+data.setCell(49, 2, 'com.example.TestTriangleArea')
+data.setCell(49, 3, 0);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testValidTriangleIsosceles')
+data.setCell(50, 2, 'com.example.TestTriangleArea')
+data.setCell(50, 3, 0);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testSubtraction')
+data.setCell(51, 2, 'com.example.TestArithmeticOperations')
+data.setCell(51, 3, 0);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testNegativeNumberThrowsException')
+data.setCell(52, 2, 'com.example.TestFactorialCalculator')
+data.setCell(52, 3, 0);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testCalculateFactorial')
+data.setCell(53, 2, 'com.example.TestFactorialCalculator')
+data.setCell(53, 3, 0);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testCalculateFactorial')
+data.setCell(54, 2, 'com.example.TestFactorialCalculator')
+data.setCell(54, 3, 0);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testModulo')
+data.setCell(55, 2, 'com.example.TestArithmeticOperations')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testFactorialOfZero')
+data.setCell(56, 2, 'com.example.TestFactorialCalculator')
+data.setCell(56, 3, 0);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testComplexExpressions')
+data.setCell(57, 2, 'com.example.TestArithmeticOperations')
+data.setCell(57, 3, 0);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testMinMaxValues')
+data.setCell(58, 2, 'com.example.TestNumberComparison')
+data.setCell(58, 3, 0);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testDivision')
+data.setCell(59, 2, 'com.example.TestArithmeticOperations')
+data.setCell(59, 3, 0);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testMultiplication')
+data.setCell(60, 2, 'com.example.TestArithmeticOperations')
+data.setCell(60, 3, 0);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testDivision')
+data.setCell(61, 2, 'com.example.TestArithmeticOperations')
+data.setCell(61, 3, 0);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'testAddition')
+data.setCell(62, 2, 'com.example.TestArithmeticOperations')
+data.setCell(62, 3, 0);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'testNumberGreater')
+data.setCell(63, 2, 'com.example.TestNumberComparison')
+data.setCell(63, 3, 0);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testDivision')
+data.setCell(64, 2, 'com.example.TestArithmeticOperations')
+data.setCell(64, 3, 0);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'testVerySmallSides')
+data.setCell(65, 2, 'com.example.TestTriangleArea')
+data.setCell(65, 3, 0);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'testModulo')
+data.setCell(66, 2, 'com.example.TestArithmeticOperations')
+data.setCell(66, 3, 0);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'testMultiplication')
+data.setCell(67, 2, 'com.example.TestArithmeticOperations')
+data.setCell(67, 3, 0);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'testLargeNumberWithinLongRange')
+data.setCell(68, 2, 'com.example.TestFactorialCalculator')
+data.setCell(68, 3, 0);
+window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 27 ms</span>
+              <div id="times-div-MyTestSuite">
+              </div> <!-- times-div-MyTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.TestArithmeticOperations</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddition(2, 3, 5, Сложение положительных чисел)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddition(0, 0, 0, Сложение нулей)</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddition(100, -50, 50, Сложение с отрицательным)</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddition(-5, 3, -2, Сложение отрицательного и положительного)</span>
+                <span class="method-start">6 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddition(2147483646, 1, 2147483647, Близко к переполнению)</span>
+                <span class="method-start">7 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testComplexExpressions((2 + 3) * 4, 20, 20)</span>
+                <span class="method-start">9 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testComplexExpressions(2 + 3 * 4, 14, 14)</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testComplexExpressions(10 / 2 + 3, 8, 8)</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testComplexExpressions(5 + 2 * 3 - 1, 10, 10)</span>
+                <span class="method-start">11 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivision(20, 4, 5, Обычное деление)</span>
+                <span class="method-start">12 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivision(7, 2, 3, Целочисленное деление)</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivision(-10, 2, -5, Отрицательное делимое)</span>
+                <span class="method-start">14 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivision(42, 1, 42, Деление на 1)</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivision(15, -3, -5, Отрицательный делитель)</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDivisionByZero</span>
+                <span class="method-start">16 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testModulo(10, 3, 1, Обычный остаток)</span>
+                <span class="method-start">17 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testModulo(8, 4, 0, Остаток 0)</span>
+                <span class="method-start">18 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testModulo(-7, 3, -1, Отрицательное делимое (результат: -1))</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testModulo(7, 10, 7, Делимое меньше делителя)</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testModulo(7, -3, 1, Отрицательный делитель (результат: 1))</span>
+                <span class="method-start">20 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultiplication(4, 5, 20, Умножение положительных)</span>
+                <span class="method-start">21 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultiplication(-3, 4, -12, Отрицательное * положительное)</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultiplication(0, 100, 0, Умножение на ноль)</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultiplication(-2, -5, 10, Отрицательное * отрицательное)</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMultiplication(1, 42, 42, Умножение на 1)</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSubtraction(5, 5, 0, Вычитание одинаковых чисел)</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSubtraction(0, 5, -5, Вычитание из нуля)</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSubtraction(10, 3, 7, Обычное вычитание)</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSubtraction(-2147483643, 5, -2147483648, Близко к минимальному)</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSubtraction(-3, 2, -5, Вычитание с отрицательными)</span>
+                <span class="method-start">25 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.TestFactorialCalculator</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(0, 1)</span>
+                <span class="method-start">27 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(1, 1)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(2, 2)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(3, 6)</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(5, 120)</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(4, 24)</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(6, 720)</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(8, 40320)</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(7, 5040)</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(9, 362880)</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(15, 1307674368000)</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCalculateFactorial(10, 3628800)</span>
+                <span class="method-start">34 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFactorialOfOne</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFactorialOverflow</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFactorialOfZero</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLargeNumberWithinLongRange</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeNumberThrowsException</span>
+                <span class="method-start">37 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.TestNumberComparison</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testEqualNumbers</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLargeNumbers</span>
+                <span class="method-start">42 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMixedSignsFirstNegative</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMinMaxValues</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testMixedSignsFirstPositive</span>
+                <span class="method-start">44 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeNumbersFirstGreater</span>
+                <span class="method-start">45 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeNumbersFirstLess</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumberGreater</span>
+                <span class="method-start">47 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNumberLess</span>
+                <span class="method-start">48 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testZeroComparison</span>
+                <span class="method-start">49 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.TestTriangleArea</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAllZeroSides</span>
+                <span class="method-start">51 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDegenerateTriangle</span>
+                <span class="method-start">52 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFloatingPointPrecision</span>
+                <span class="method-start">53 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidTriangleSumOfTwoSidesEqualsThird</span>
+                <span class="method-start">54 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidTriangleSumOfTwoSidesLessThanThird</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLargeSides</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeSide</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidTriangleEquilateral</span>
+                <span class="method-start">58 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidTriangleIsosceles</span>
+                <span class="method-start">59 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidTriangleRightAngled</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testVerySmallSides</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testZeroSide</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

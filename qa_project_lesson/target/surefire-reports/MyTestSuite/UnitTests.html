@@ -1,0 +1,505 @@
+<html>
+<head>
+<title>TestNG:  UnitTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UnitTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>69/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 10 21:56:41 YEKT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (93 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.TestTriangleArea.testLargeSides()'><b>testLargeSides</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 5, 120</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testNumberLess()'><b>testNumberLess</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testDivisionByZero()'><b>testDivisionByZero</b><br>Test class: com.example.TestArithmeticOperations</td>
+<td><div><pre>java.lang.ArithmeticException: / by zero
+	at com.example.TestArithmeticOperations.performDivision(TestArithmeticOperations.java:77)
+	at com.example.TestArithmeticOperations.testDivisionByZero(TestArithmeticOperations.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2107443224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2107443224'><pre>java.lang.ArithmeticException: / by zero
+	at com.example.TestArithmeticOperations.performDivision(TestArithmeticOperations.java:77)
+	at com.example.TestArithmeticOperations.testDivisionByZero(TestArithmeticOperations.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testLargeNumbers()'><b>testLargeNumbers</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testFactorialOfOne()'><b>testFactorialOfOne</b><br>Test class: com.example.TestFactorialCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testSubtraction()'><b>testSubtraction</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 5, 5, 0, Вычитание одинаковых чисел</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testMixedSignsFirstPositive()'><b>testMixedSignsFirstPositive</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 0, 1</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 15, 1307674368000</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testMultiplication()'><b>testMultiplication</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -3, 4, -12, Отрицательное * положительное</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testAddition()'><b>testAddition</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 100, -50, 50, Сложение с отрицательным</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testFloatingPointPrecision()'><b>testFloatingPointPrecision</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testMixedSignsFirstNegative()'><b>testMixedSignsFirstNegative</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 8, 40320</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testNegativeNumbersFirstLess()'><b>testNegativeNumbersFirstLess</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testInvalidTriangleSumOfTwoSidesLessThanThird()'><b>testInvalidTriangleSumOfTwoSidesLessThanThird</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testSubtraction()'><b>testSubtraction</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -2147483643, 5, -2147483648, Близко к минимальному</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 1, 1</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 2, 2</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 3, 6</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testSubtraction()'><b>testSubtraction</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 0, 5, -5, Вычитание из нуля</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 10, 3628800</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testModulo()'><b>testModulo</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -7, 3, -1, Отрицательное делимое (результат: -1)</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testEqualNumbers()'><b>testEqualNumbers</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 7, 5040</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 4, 24</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testAddition()'><b>testAddition</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -5, 3, -2, Сложение отрицательного и положительного</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testMultiplication()'><b>testMultiplication</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -2, -5, 10, Отрицательное * отрицательное</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testValidTriangleRightAngled()'><b>testValidTriangleRightAngled</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testValidTriangleEquilateral()'><b>testValidTriangleEquilateral</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testAddition()'><b>testAddition</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 2147483646, 1, 2147483647, Близко к переполнению</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testSubtraction()'><b>testSubtraction</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -3, 2, -5, Вычитание с отрицательными</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testModulo()'><b>testModulo</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 10, 3, 1, Обычный остаток</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testMultiplication()'><b>testMultiplication</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 1, 42, 42, Умножение на 1</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testModulo()'><b>testModulo</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 7, -3, 1, Отрицательный делитель (результат: 1)</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testComplexExpressions()'><b>testComplexExpressions</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 2 + 3 * 4, 14, 14</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testNegativeNumbersFirstGreater()'><b>testNegativeNumbersFirstGreater</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testComplexExpressions()'><b>testComplexExpressions</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 10 / 2 + 3, 8, 8</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testDivision()'><b>testDivision</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 42, 1, 42, Деление на 1</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testZeroSide()'><b>testZeroSide</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testValidTriangleIsosceles()'><b>testValidTriangleIsosceles</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testSubtraction()'><b>testSubtraction</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 10, 3, 7, Обычное вычитание</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testNegativeNumberThrowsException()'><b>testNegativeNumberThrowsException</b><br>Test class: com.example.TestFactorialCalculator</td>
+<td><div><pre>java.lang.IllegalArgumentException: Факториал отрицательного числа не существует.
+	at com.example.FactorialCalculator.calculateFactorial(FactorialCalculator.java:24)
+	at com.example.TestFactorialCalculator.testNegativeNumberThrowsException(TestFactorialCalculator.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1391624125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391624125'><pre>java.lang.IllegalArgumentException: Факториал отрицательного числа не существует.
+	at com.example.FactorialCalculator.calculateFactorial(FactorialCalculator.java:24)
+	at com.example.TestFactorialCalculator.testNegativeNumberThrowsException(TestFactorialCalculator.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+</pre></div></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 6, 720</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testFactorialOverflow()'><b>testFactorialOverflow</b><br>Test class: com.example.TestFactorialCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testAddition()'><b>testAddition</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 2, 3, 5, Сложение положительных чисел</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testCalculateFactorial()'><b>testCalculateFactorial</b><br>Test class: com.example.TestFactorialCalculator<br>Parameters: 9, 362880</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testDegenerateTriangle()'><b>testDegenerateTriangle</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testModulo()'><b>testModulo</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 7, 10, 7, Делимое меньше делителя</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testFactorialOfZero()'><b>testFactorialOfZero</b><br>Test class: com.example.TestFactorialCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testAllZeroSides()'><b>testAllZeroSides</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testComplexExpressions()'><b>testComplexExpressions</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: (2 + 3) * 4, 20, 20</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testNegativeSide()'><b>testNegativeSide</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testMinMaxValues()'><b>testMinMaxValues</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testDivision()'><b>testDivision</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 20, 4, 5, Обычное деление</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testDivision()'><b>testDivision</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: -10, 2, -5, Отрицательное делимое</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testMultiplication()'><b>testMultiplication</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 0, 100, 0, Умножение на ноль</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testComplexExpressions()'><b>testComplexExpressions</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 5 + 2 * 3 - 1, 10, 10</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testDivision()'><b>testDivision</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 7, 2, 3, Целочисленное деление</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testAddition()'><b>testAddition</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 0, 0, 0, Сложение нулей</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testNumberGreater()'><b>testNumberGreater</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testDivision()'><b>testDivision</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 15, -3, -5, Отрицательный делитель</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testInvalidTriangleSumOfTwoSidesEqualsThird()'><b>testInvalidTriangleSumOfTwoSidesEqualsThird</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestTriangleArea.testVerySmallSides()'><b>testVerySmallSides</b><br>Test class: com.example.TestTriangleArea</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestTriangleArea@3232a28a</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testModulo()'><b>testModulo</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 8, 4, 0, Остаток 0</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestArithmeticOperations.testMultiplication()'><b>testMultiplication</b><br>Test class: com.example.TestArithmeticOperations<br>Parameters: 4, 5, 20, Умножение положительных</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestArithmeticOperations@662b4c69</td></tr>
+<tr>
+<td title='com.example.TestFactorialCalculator.testLargeNumberWithinLongRange()'><b>testLargeNumberWithinLongRange</b><br>Test class: com.example.TestFactorialCalculator</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestFactorialCalculator@4d0f2471</td></tr>
+<tr>
+<td title='com.example.TestNumberComparison.testZeroComparison()'><b>testZeroComparison</b><br>Test class: com.example.TestNumberComparison</td>
+<td></td>
+<td>0</td>
+<td>com.example.TestNumberComparison@7133da86</td></tr>
+</table><p>
+</body>
+</html>

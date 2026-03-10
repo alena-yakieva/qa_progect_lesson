@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="0.606" tests="69" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\test-classes;C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\classes;C:\Users\Кирилл\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\Кирилл\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Кирилл\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Кирилл\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Yekaterinburg"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.30\bin"/>
+    <property name="sun.java.command" value="C:\Users\Кирилл\AppData\Local\Temp\surefire11400373636949530527\surefirebooter-20260310215639862_3.jar C:\Users\Кирилл\AppData\Local\Temp\surefire11400373636949530527 2026-03-10T21-56-39_348-jvmRun1 surefire-20260310215639862_1tmp surefire_0-20260310215639862_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\test-classes;C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson\target\classes;C:\Users\Кирилл\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\Кирилл\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Кирилл\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Кирилл\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Кирилл"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.30"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Кирилл\AppData\Local\Temp\surefire11400373636949530527\surefirebooter-20260310215639862_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.30+7-LTS-282"/>
+    <property name="user.name" value="Kirill"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Кирилл\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Кирилл\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.30"/>
+    <property name="user.dir" value="C:\Users\Кирилл\IdeaProjects\qa_progect_lesson\qa_project_lesson"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.30\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7-preview;c:\Users\Кирилл\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Кирилл\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Users\Кирилл\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Eclipse Adoptium\jdk-25.0.2.10-hotspot\bin;C:\Program Files\apache-maven-3.9.12-bin\apache-maven-3.9.12\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Users\Кирилл\AppData\Local\Microsoft\WindowsApps;C:\Users\Кирилл\IntelliJ IDEA Community Edition 2022.1.4\bin;C:\Users\Кирилл\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Кирилл\AppData\Local\Programs\Fiddler;C:\Program Files\JetBrains\PyCharm Community Edition 2024.3.1.1\bin;C:\Program Files\nodejs;C:\Users\Кирилл\AppData\Roaming\npm;C:\Users\Кирилл\AppData\Local\Microsoft\WindowsApps;C:\Users\Кирилл\AppData\Local\JetBrains\Toolbox\scripts;C:\Program Files\Java\jdk-11.0.30\bin;c:\Users\Кирилл\.vscode\extensions\vscjava.vscode-java-debug-0.58.5\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.30+7-LTS-282"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testAddition[2, 3, 5, Сложение положительных чисел](1)" classname="com.example.TestArithmeticOperations" time="0.003">
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testAddition[0, 0, 0, Сложение нулей](2)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testAddition[-5, 3, -2, Сложение отрицательного и положительного](3)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testAddition[100, -50, 50, Сложение с отрицательным](4)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testAddition[2147483646, 1, 2147483647, Близко к переполнению](5)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testComplexExpressions[(2 + 3) * 4, 20, 20](1)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testComplexExpressions[2 + 3 * 4, 14, 14](2)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testComplexExpressions[10 / 2 + 3, 8, 8](3)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testComplexExpressions[5 + 2 * 3 - 1, 10, 10](4)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testDivision[20, 4, 5, Обычное деление](1)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testDivision[7, 2, 3, Целочисленное деление](2)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testDivision[-10, 2, -5, Отрицательное делимое](3)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testDivision[15, -3, -5, Отрицательный делитель](4)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testDivision[42, 1, 42, Деление на 1](5)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testDivisionByZero" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testModulo[10, 3, 1, Обычный остаток](1)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testModulo[8, 4, 0, Остаток 0](2)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testModulo[7, 10, 7, Делимое меньше делителя](3)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testModulo[-7, 3, -1, Отрицательное делимое (результат: -1)](4)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testModulo[7, -3, 1, Отрицательный делитель (результат: 1)](5)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testMultiplication[4, 5, 20, Умножение положительных](1)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testMultiplication[0, 100, 0, Умножение на ноль](2)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testMultiplication[-3, 4, -12, Отрицательное * положительное](3)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testMultiplication[-2, -5, 10, Отрицательное * отрицательное](4)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testMultiplication[1, 42, 42, Умножение на 1](5)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testSubtraction[10, 3, 7, Обычное вычитание](1)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testSubtraction[5, 5, 0, Вычитание одинаковых чисел](2)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testSubtraction[0, 5, -5, Вычитание из нуля](3)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testSubtraction[-3, 2, -5, Вычитание с отрицательными](4)" classname="com.example.TestArithmeticOperations" time="0.0"/>
+  <testcase name="testSubtraction[-2147483643, 5, -2147483648, Близко к минимальному](5)" classname="com.example.TestArithmeticOperations" time="0.001"/>
+  <testcase name="testCalculateFactorial[0, 1](1)" classname="com.example.TestFactorialCalculator" time="0.002"/>
+  <testcase name="testCalculateFactorial[1, 1](2)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[2, 2](3)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[3, 6](4)" classname="com.example.TestFactorialCalculator" time="0.001"/>
+  <testcase name="testCalculateFactorial[4, 24](5)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[5, 120](6)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[6, 720](7)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[7, 5040](8)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[8, 40320](9)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[9, 362880](10)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[10, 3628800](11)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testCalculateFactorial[15, 1307674368000](12)" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testFactorialOfOne" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testFactorialOfZero" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testFactorialOverflow" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testLargeNumberWithinLongRange" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testNegativeNumberThrowsException" classname="com.example.TestFactorialCalculator" time="0.0"/>
+  <testcase name="testEqualNumbers" classname="com.example.TestNumberComparison" time="0.002"/>
+  <testcase name="testLargeNumbers" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testMinMaxValues" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testMixedSignsFirstNegative" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testMixedSignsFirstPositive" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testNegativeNumbersFirstGreater" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testNegativeNumbersFirstLess" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testNumberGreater" classname="com.example.TestNumberComparison" time="0.001"/>
+  <testcase name="testNumberLess" classname="com.example.TestNumberComparison" time="0.001"/>
+  <testcase name="testZeroComparison" classname="com.example.TestNumberComparison" time="0.0"/>
+  <testcase name="testAllZeroSides" classname="com.example.TestTriangleArea" time="0.001"/>
+  <testcase name="testDegenerateTriangle" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testFloatingPointPrecision" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testInvalidTriangleSumOfTwoSidesEqualsThird" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testInvalidTriangleSumOfTwoSidesLessThanThird" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testLargeSides" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testNegativeSide" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testValidTriangleEquilateral" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testValidTriangleIsosceles" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testValidTriangleRightAngled" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testVerySmallSides" classname="com.example.TestTriangleArea" time="0.0"/>
+  <testcase name="testZeroSide" classname="com.example.TestTriangleArea" time="0.0"/>
+</testsuite>
