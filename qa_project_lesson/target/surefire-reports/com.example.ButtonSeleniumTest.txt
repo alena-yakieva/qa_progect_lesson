@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.example.ButtonSeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 36.75 s <<< FAILURE! -- in com.example.ButtonSeleniumTest
+com.example.ButtonSeleniumTest.testButton -- Time elapsed: 36.72 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //div[contains(@class, 'ng-tns') and contains(@class, 'card')] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.30'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\Кирилл\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:24289}, goog:processID: 18916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:24289/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 305f22abc13641e74aa63bf547d49d3c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.example.ButtonSeleniumTest.testButton(ButtonSeleniumTest.java:83)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
