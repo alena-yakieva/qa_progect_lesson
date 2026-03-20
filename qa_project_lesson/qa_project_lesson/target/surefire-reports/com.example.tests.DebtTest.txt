@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.tests.DebtTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.10 s -- in com.example.tests.DebtTest

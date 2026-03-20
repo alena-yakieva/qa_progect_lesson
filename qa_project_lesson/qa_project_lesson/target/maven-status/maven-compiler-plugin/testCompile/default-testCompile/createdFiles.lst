@@ -1,0 +1,5 @@
+com\example\tests\InstallmentTest.class
+com\example\tests\DebtTest.class
+com\example\tests\HomeInternetTest.class
+com\example\tests\PaymentPopupTest.class
+com\example\tests\CommunicationServicesTest.class
